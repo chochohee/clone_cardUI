@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #29363d;
+  --sub-color: #5a6a72;
+}
+
+body {
+  font-family: "Pretendard-Regular", sans-serif;
+  color: var(--main-color);
+  background-color: #eee;
+}
+
+/* 공통적용 */
+.sample {
+  display: flex;
+}
+.ell2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 2줄 넘어가면 말줄임 */
+  line-clamp: 2;
+}
+
+article {
+  width: 288px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: "Pretendard-Bold";
+  line-height: 16px;
+  color: var(--main-color);
+  width: 200px;
+  height: 20px;
+}
+
+.text {
+  font-family: "Pretendard-Regular";
+  width: 256px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: var(--sub-color);
+}
+
+.read {
+  font-family: "Pretendard-Bold";
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--main-color);
+  text-decoration: underline;
+  width: 70px;
+  height: 24px;
+  padding-top: 4px;
+}
+
+/* card1 */
+.card1 {
+  position: relative;
+  height: 348px;
+  margin-top: 46px;
+  margin-left: 63px;
+}
+
+.card1 .card1-thumbnail {
+  width: 100%;
+  aspect-ratio: 288/196;
+  border-radius: 8px 8px 0 0;
+}
+
+.card1-content {
+  width: 256px;
+  height: 116px;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.card1 .card1-content .text {
+  margin-top: 16px;
+}
+
+.card1 .read {
+  margin-top: 16px;
+}
+
+/* card2 */
+
+.card2 {
+  position: relative;
+  height: 374px;
+  margin-top: 46px;
+  margin-left: 63px;
+}
+
+.card2 .title-box {
+  display: flex;
+  width: 256px;
+  height: 40px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.card2 .titletext-group {
+  width: 200px;
+  height: 34px;
+  margin-left: 16px;
+}
+
+.card2 .title-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card2 .title-box .user-name {
+  font-family: "Pretendard-Regular";
+  font-size: 12px;
+  line-height: 14.4px;
+  color: var(--sub-color);
+}
+
+.card2 .card2-thumbnail {
+  width: 288px;
+  height: 196px;
+  margin-top: 12px;
+}
+
+.card2 .card2-content {
+  width: 256px;
+  height: 84px;
+  margin-left: 16px;
+}
+
+.card2 .card2-content .text {
+  margin-top: 10px;
+}
+
+.card2 .card2-content .btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 256px;
+  height: 32px;
+  margin-top: 16px;
+}
+
+.card2 .btn-group .icon-group {
+  width: 112px;
+  height: 32px;
+}
+
+.card2 .icon-group button {
+  width: 32px;
+  height: 32px;
+}
+
+.card2 .read::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+
+  position: absolute;
+  left: 76px;
+  bottom: 25px;
+
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+
+  transform: translate(-10px, 50%) rotate(45deg);
+}
