@@ -6,4 +6,4 @@
 - 블로그 card의 article 구조를 생각해보며 시네마틱한 마크업진행.
 
   ###UI/UX
-  ![image](https://github.com/user-attachments/assets/d1434e45-6bda-4ce7-94a2-f2219c2ba264)
+    ![image](https://github.com/user-attachments/assets/d1434e45-6bda-4ce7-94a2-f2219c2ba264)
